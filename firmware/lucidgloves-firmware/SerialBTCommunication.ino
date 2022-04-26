@@ -1,7 +1,9 @@
 //only compiles if BTSerial is set because it won't compile for a non-compatible board
 #if COMMUNICATION == COMM_BTSERIAL
-#include "BluetoothSerial.h"
-class BTSerialCommunication : public ICommunication {
+#include <WiFi.h>
+#include <AsyncTCP.h>
+#include <ESPAsyncWebServer.h>
+class WIFISerialCommunication : public ICommunication {
   private:
     bool m_isOpen;
     BluetoothSerial m_SerialBT;

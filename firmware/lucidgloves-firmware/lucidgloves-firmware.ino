@@ -15,6 +15,11 @@
 //serial over Bluetooth
   #define BTSERIAL_DEVICE_NAME "lucidgloves-left"
 
+//serial over WIFI
+//Please read through the code before entering your SSID and your password"
+#define WIFISERIAL_SSID "WIFI SSID here"
+#define WIFISERIAL_PASSWORD "password here"
+
 //ANALOG INPUT CONFIG
 #define FLIP_POTS  false  //Flip values from potentiometers (for fingers!) if they are backwards
 
